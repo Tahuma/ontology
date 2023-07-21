@@ -75,9 +75,9 @@ label@he
 uuid
 
 Unit:
-(Proem)[https://github.com/Tahuma/ontology/wiki/Proem]
-Body
-Peroration
+* [Proem](https://github.com/Tahuma/ontology/wiki/Proem)
+* Body
+* Peroration
 
 #### Unit sub type
 Halakhic 
