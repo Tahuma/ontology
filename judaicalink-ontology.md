@@ -1,10 +1,9 @@
 ## Ontology Documentation
 
-The JudaicaLink Ontology can be obtained via [http://ontology.judaicalink.org/](http://ontology.judaicalink.org)
 
 This is the main ontology document. All other representations are generated automatically from this document.
 
-- [Turtle](judaicalink-ontology.ttl)
+- [Turtle](ontology.ttl)
 
 ### Namespaces
 The following namespaces are used in this ontology:
@@ -14,12 +13,83 @@ The following namespaces are used in this ontology:
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
-@prefix jl: <http://data.judaicalink.org/ontology/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix tan: <http://tanhuma.com/ontology#> .
 ```
+
+### Concept
+Class: tan:Artifact
+
+* Title
+* Type
+    * Manuscripts
+    * Printed Editions
+    * Genizah Fragments
+    * Binding Fragments
+
+* Definitiion
+* tagging format
+
+### lections
+* Parasha
+* Seder
+* special Reading
+* Name = label
+* opening verse
+
+### biblical reference
+* books
+* chapter
+* verse
+* word
+* sequence
+
+  ### canonical editions
+  * label, e.g. "Pesiqta rabbati 34:5"
+  * 
+
+### rabbinic reference
+* canonical edition
+* citation
+* parallel
+
+#### rabbinical citation
+* label@en
+* henLabel@he
+
+
+### Entities
+* type
+* label
+* prefLabel
+* hebrew
+
+Class: tan:codicologicalUnits
+
+Class: structuralUnits
+label@en
+label@he
+uuid
+
+Unit:
+Proem
+Body
+Peroration
+
+#### Unit sub type
+Halakhic 
+ZS"H
+Circular
+Above
+Exegesis
+Narrative Midrash
+
+
+
+
 
 ### Concept
 
