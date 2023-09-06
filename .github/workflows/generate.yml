@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
@@ -28,6 +28,6 @@ jobs:
           git config --global user.email "b.schnabel@hs-mannheim.de"
           git config --global user.name "Benjamin Schnabel"
           git add .
-          git diff-index --quiet HEAD || git commit -m "judaicalink-ontology.ttl file updated" -a
+          git diff-index --quiet HEAD || git commit -m "ontology.ttl file updated" -a
           git push
         if: ${{ github.event_name == 'push' && steps.generate.outputs.exit-code == 0 }}
