@@ -143,22 +143,7 @@ skos:narrower
     rdfs:range skos:Concept .
 ```
 
-#### foaf:primaryTopic
-```
-foaf:primaryTopic
-    a rdf:Property ;
-    rdfs:label "primary topic"@en ;
-    rdfs:comment "The primary topic of some page or document"@en ;
-    rdfs:range owl:Thing .
-```
-#### owl:sameAs
-```
-owl:sameAs
-    a rdf:Property ;
-    rdfs:label "same as"@en ;
-    rdfs:comment "These constructs may be used to create a number of different names that refer to the same individual"@en ;
-    rdfs:range owl:Thing .
-```
+
 #### dcterms:identifier
 ```
 dcterms:identifier
@@ -174,38 +159,6 @@ dcterms:subject
     rdfs:label "subject"@en ;
     rdfs:comment "The topic of the resource, category or subject heading that further describes this resource. (broader category used to describe ) "@en ;
     rdfs:range owl:Thing .
-```
-#### jl:describedAt
-```
-jl:describedAt
-    a rdf:Property ;
-    rdfs:label "described at"@en ;
-    rdfs:comment "Link to textual resource of encyclopedia article"@en ;
-    rdfs:range foaf:Document .
-```
-#### jl:hasAbstract
-```
-jl:hasAbstract
-    a rdf:Property ;
-    rdfs:label "has abstract"@en ;
-    rdfs:comment "The abstract of the article in which the concept or the person is described "@en ;
-    rdfs:range rdfs:Literal .
-```
-#### jl:hasCategory
-```
-jl:hasCategory
-    a rdf:Property ;
-    rdfs:label "has category "@en ;
-    rdfs:comment "The category to which the concept was assigned to in the original data source"@en ;
-    rdfs:range skos:Concept .
-```
-#### jl:referTo
-```
-jl:referTo
-    a rdf:Property ;
-    rdfs:label "refer to"@en ;
-    rdfs:comment "Used for redirection of one concept to another concept mostly in encyclopedias (when there is a name change or other reasons)"@en ;
-    rdfs:range skos:Concept .
 ```
 
 #### geo:asWKT
