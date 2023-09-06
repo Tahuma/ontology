@@ -3,10 +3,10 @@
 
 ## Welcome
 
-Here, you find the JudaicaLink Ontology, i.e., the definitions of the properties and classes used in the [JudaicaLink](http://web.judaicalink.org) project.
+This is the repository for the Tanhuma project Ontology, i.e., the definitions of the properties and classes used in the [Tanhuma Project](http://tanhuma.org).
 
-You can contribute to the ontology by either raising an [issue](https://github.com/wisslab/judaicalink-ontology/issues) or creating a [pull request](https://github.com/wisslab/judaicalink-ontology/pulls).
+You can contribute to the ontology by either raising an [issue](https://github.com/Tahuma/ontology/issues) or creating a [pull request](https://github.com/Tahuma/ontology/pulls).
 
-Here is the ontology: [https://ontology.judaicalink.org/judaicalink-ontology](https://ontology.judaicalink.org/judaicalink-ontology)
+Here is the ontology: [https://tanhuma.org/ontology](https://tanhuma.org/ontology)
 
-You can also download the ontology in Turtle format: [http://ontology.judaicalink.org/judaicalink-ontology.ttl](judaicalink-ontology.ttl)
+You can also download the ontology in Turtle format: [https://raw.githubusercontent.com/Tahuma/ontology/master/ontology.ttl](https://raw.githubusercontent.com/Tahuma/ontology/master/ontology.ttl).
