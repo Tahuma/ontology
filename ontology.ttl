@@ -1,0 +1,99 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix tan: <http://tanhuma.com/ontology#> .
+skos:altLabel
+    a rdf:Property ;
+    rdfs:label "alternative label"@en ;
+    rdfs:comment "Alternative writing format or language of the preferred label of a person or concept"@en ;
+    rdfs:range rdfs:Literal .
+skos:prefLabel
+    a rdf:Property ;
+    rdfs:label "preferred label"@en ;
+    rdfs:comment "The label that is preferred to be used for a person or concept"@en ;
+    rdfs:range rdfs:Literal .
+skos:related
+    a rdf:Property ;
+    rdfs:label "has related"@en ;
+    rdfs:comment "used to assert an associative link between two skos concepts"@en ;
+    rdfs:range skos:Concept .
+skos:scopeNote
+    a rdf:Property ;
+    rdfs:label "scope note"@en ;
+    rdfs:comment "Notes are used to provide information relating to skos concepts"@en ;
+    rdfs:range rdfs:Literal .
+skos:broader
+    a rdf:Property ;
+    rdfs:label "has broader"@en ;
+    rdfs:comment "used to indicates that one skos concept is in some way more general (broader) than the other"@en  ;
+    rdfs:range skos:Concept .
+skos:narrower
+    a rdf:Property ;
+    rdfs:label "has narrower"@en ;
+    rdfs:comment "used to indicates that one skos concept is in some way less general (narrower) than the other"@en ;
+    rdfs:range skos:Concept .
+foaf:primaryTopic
+    a rdf:Property ;
+    rdfs:label "primary topic"@en ;
+    rdfs:comment "The primary topic of some page or document"@en ;
+    rdfs:range owl:Thing .
+owl:sameAs
+    a rdf:Property ;
+    rdfs:label "same as"@en ;
+    rdfs:comment "These constructs may be used to create a number of different names that refer to the same individual"@en ;
+    rdfs:range owl:Thing .
+dcterms:identifier
+    a rdf:Property ;
+    rdfs:label "identifier"@en ;
+    rdfs:comment "An unambiguous reference to the resource within a given context"@en ;
+    rdfs:range rdfs:Literal .
+dcterms:subject
+    a rdf:Property ;
+    rdfs:label "subject"@en ;
+    rdfs:comment "The topic of the resource, category or subject heading that further describes this resource. (broader category used to describe ) "@en ;
+    rdfs:range owl:Thing .
+jl:describedAt
+    a rdf:Property ;
+    rdfs:label "described at"@en ;
+    rdfs:comment "Link to textual resource of encyclopedia article"@en ;
+    rdfs:range foaf:Document .
+jl:hasAbstract
+    a rdf:Property ;
+    rdfs:label "has abstract"@en ;
+    rdfs:comment "The abstract of the article in which the concept or the person is described "@en ;
+    rdfs:range rdfs:Literal .
+jl:hasCategory
+    a rdf:Property ;
+    rdfs:label "has category "@en ;
+    rdfs:comment "The category to which the concept was assigned to in the original data source"@en ;
+    rdfs:range skos:Concept .
+jl:referTo
+    a rdf:Property ;
+    rdfs:label "refer to"@en ;
+    rdfs:comment "Used for redirection of one concept to another concept mostly in encyclopedias (when there is a name change or other reasons)"@en ;
+    rdfs:range skos:Concept .
+geo:asWKT
+    a rdf:Property ;
+    rdfs:label "asWKT"@en ;
+    rdfs:comment "The WKT serialization of a geometry"@en ;
+    rdfs:range geo:wktLiteral .
+foaf:primaryTopic
+    a rdf:Property ;
+    rdfs:label "primary topic"@en ;
+    rdfs:comment "The primary topic of some page or document"@en ;
+    rdfs:range owl:Thing .
+rdfs:label
+    a rdf:Property ;
+    rdfs:label "label"@en ;
+    rdfs:comment "used to provide a human-readable version of a resource's name"@en ;
+    rdfs:range rdfs:Literal .
+dcterms:created
+    a rdf:Property ;
+    rdfs:label "created"@en ;
+    rdfs:comment "Date of creation of the resource"@en ;
+    rdfs:range rdfs:Literal .
