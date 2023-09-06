@@ -89,8 +89,6 @@ Narrative Midrash
 
 
 
-
-
 ### Concept
 
 Class: skos:Concept
@@ -219,76 +217,6 @@ geo:asWKT
     rdfs:range geo:wktLiteral .
 ```
 
-#### jl:hasAnnotation
-```
-jl:hasAnnotation
-    a rdf:Property ;
-    rdfs:label "has annotation"@en ;
-    rdfs:comment "An annotation to the triple"@en ;
-    rdfs:range rdfs:Literal .
-```
-
-
-### Person
-
-Class: foaf:Person
-
-#### gnd:gndIdentifier
-```
-gndo:gndIdentifier
-    a rdf:Property ;
-    rdfs:label "gnd identifier"@en ;
-    rdfs:comment "The identifier of the person or concept in the Integrated Authority File of the German National Library (GND)"@en ;
-    rdfs:range rdfs:Literal .
-```
-#### jl:birthDate
-```
-jl:birthDate
-    a rdf:Property ;
-    rdfs:label "birth date"@en ;
-    rdfs:comment "The date of birth of the person "@en ;
-    rdfs:range rdfs:Literal .
-```
-#### jl:deathDate
-```
-jl:deathDate
-    a rdf:Property ;
-    rdfs:label "death date"@en ;
-    rdfs:comment "The date of death of the person"@en ;
-    rdfs:range rdfs:Literal .
-```
-#### jl:birthLocation 
-```
-jl:birthLocation 
-    a rdf:Property ;
-    rdfs:label "birth location"@en ;
-    rdfs:comment "The location of birth of the person"@en ;
-    rdfs:range rdfs:Literal .
-```
-#### jl:deathLocation 
-```
-jl:deathLocation 
-    a rdf:Property ;
-    rdfs:label "death location"@en ;
-    rdfs:comment "The location of death of the person"@en ;
-    rdfs:range rdfs:Literal .
-```
-#### jl:occupation
-```
-jl:occupation
-    a rdf:Property ;
-    rdfs:label "occupation"@en ;
-    rdfs:comment "The occupation of the person "@en ;
-    rdfs:range rdfs:Literal .
-```
-#### jl:hasPublication
-```
-jl:hasPublication
-    a rdf:Property ;
-    rdfs:label "has publication"@en ;
-    rdfs:comment "The publications of the person"@en ;
-    rdfs:range rdfs:Literal .
-```
 
 ### Document
 
@@ -319,87 +247,9 @@ dcterms:created
     rdfs:range rdfs:Literal .
 ```
 
-### Annotation
-
-Class:Annotations
-
-#### jl:Annotation
-```
-jl:Annotation a owl:Class ;
-  rdfs:label "Annotation" .
-```
-
-#### jl:text
-```
-jl:text a owl:DatatypeProperty ;
-  rdfs:label "Text" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range xsd:string .
-```
-#### jl:uuid
-```
-jl:uuid a owl:DatatypeProperty ;
-  rdfs:label "UUID" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range xsd:string .
-```
-
-#### jl:status
-```
-jl:status a owl:DatatypeProperty ;
-  rdfs:label "Status" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range xsd:string .
-```
-
-#### jl:published
-```
-jl:published a owl:DatatypeProperty ;
-  rdfs:label "Published" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range xsd:boolean .
-```
-#### jl:issue-url
-```
-jl:issue-url a owl:ObjectProperty ;
-  rdfs:label "Issue URL" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range xsd:anyURI .
-```
-
-#### jl:tag
-```
-jl:tag a owl:DatatypeProperty ;
-  rdfs:label "Tag" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range rdfs:Literal .
-```
-
-#### jl:user
-```
-jl:user a owl:DatatypeProperty ;
-  rdfs:label "User" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range xsd:string .
-```
-#### jl:timestamp
-```
-jl:timestamp a owl:DatatypeProperty ;
-  rdfs:label "Timestamp" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range xsd:dateTime .
-```
-#### jl:ip
-```
-jl:ip a owl:DatatypeProperty ;
-  rdfs:label "IP" ;
-  rdfs:domain jl:Annotations ;
-  rdfs:range xsd:string .
-```
-
 ### Metadata
 
-The JudaicaLink ontology is maintained on Github via the following document:
+The Tanhuma Project ontology is maintained on Github via the following document:
 
 [https://github.com/wisslab/judaicalink-ontology/blob/master/judaicalink-ontology.md](
 https://github.com/wisslab/judaicalink-ontology/blob/master/judaicalink-ontology.md)
